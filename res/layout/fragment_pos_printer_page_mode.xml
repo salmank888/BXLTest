@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bxl.postest.POSPrinterPageModeFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/page_mode_area" />
+
+    <TextView
+        android:id="@+id/textViewPageModeArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/editTextPageModeHorizontalPosition" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="@string/page_mode_horizontal_position" />
+
+    <EditText
+        android:id="@+id/editTextPageModeHorizontalPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPageModeHorizontalPosition"
+        android:text="@string/page_mode_vertical_position" />
+
+    <EditText
+        android:id="@+id/editTextPageModeVerticalPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPageModeHorizontalPosition"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPageModeVerticalPosition"
+        android:text="@string/page_mode_print_area" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPageModeVerticalPosition"
+        android:layout_below="@+id/editTextPageModeVerticalPosition" >
+
+        <EditText
+            android:id="@+id/editTextPageModePrintArea1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editTextPageModePrintArea2" />
+
+        <EditText
+            android:id="@+id/editTextPageModePrintArea2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editTextPageModePrintArea3"
+            android:nextFocusUp="@+id/editTextPageModePrintArea1" />
+
+        <EditText
+            android:id="@+id/editTextPageModePrintArea3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editTextPageModePrintArea4"
+            android:nextFocusUp="@+id/editTextPageModePrintArea2" />
+
+        <EditText
+            android:id="@+id/editTextPageModePrintArea4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:nextFocusUp="@+id/editTextPageModePrintArea3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:text="@string/page_mode_print_direction" />
+
+    <Spinner
+        android:id="@+id/spinnerPageModePrintDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:entries="@array/page_mode_print_direction" />
+
+    <Button
+        android:id="@+id/buttonClearPrintArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerPageModePrintDirection"
+        android:text="@string/clear_print_area" />
+
+    <Button
+        android:id="@+id/buttonUpdateProperties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonClearPrintArea"
+        android:layout_alignBottom="@+id/buttonClearPrintArea"
+        android:layout_toRightOf="@+id/buttonClearPrintArea"
+        android:text="@string/update_properties" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonClearPrintArea"
+        android:text="@string/page_mode_command" />
+
+    <Spinner
+        android:id="@+id/spinnerPageModeCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonClearPrintArea"
+        android:layout_toRightOf="@+id/textView7"
+        android:entries="@array/page_mode_command" />
+
+    <Button
+        android:id="@+id/buttonSendPageModeCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerPageModeCommand"
+        android:text="@string/send_page_mode_command" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSendPageModeCommand"
+        android:layout_centerHorizontal="true"
+        android:text="@string/device_messages" />
+
+    <TextView
+        android:id="@+id/textViewDeviceMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2" />
+
+</RelativeLayout>

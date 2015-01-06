@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BXL Test</string>
+    <string name="shared_user_id">com.bxl.printer</string>
+
+    <!-- DeviceCategoryListFragment.java -->
+    <string name="cash_drawer">CashDrawer</string>
+    <string name="msr">MSR</string>
+    <string name="pos_printer">POSPrinter</string>
+    <string name="smart_card_rw">SmartCardRW</string>
+
+    <string-array name="device_category">
+        <item>CashDrawer</item>
+        <item>MSR</item>
+        <item>POSPrinter</item>
+        <item>SmartCardRW</item>
+    </string-array>
+    <string-array name="pos_printer_children">
+        <item>Common</item>
+        <item>General Printing</item>
+        <item>Barcode</item>
+        <item>Bitmap</item>
+        <item>Page Mode</item>
+    </string-array>
+
+    <!-- POSPrinterBarCodeFragment.java -->
+    <string-array name="bar_code_data">
+        <item>012345678905</item>
+        <item>012345678905</item>
+        <item>47112346</item>
+        <item>4711234567899</item>
+        <item>1234567895</item>
+        <item>A1234567B</item>
+        <item>ANDY</item>
+        <item>12345</item>
+        <item>http://www.bixolon.com</item>
+        <item>http://www.bixolon.com</item>
+        <item>http://www.bixolon.com</item>
+        <item>http://www.bixolon.com</item>
+    </string-array>
+
+    <string name="bar_code_height_hint">1 to 255</string>
+    <string name="bar_code_width_hint">2 to 6</string>
+    <string name="pdf417_height_hint">2 to 8</string>
+    <string name="pdf417_width_hint">2 to 3</string>
+    <string name="qrcode_size_hint">1 to 8</string>
+    <string name="datamatrix_size_hint">2 to 3</string>
+
+    <!-- MessageDialogFragment.java -->
+    <string name="ok">OK</string>
+
+    <!-- fragment_pos_printer_common.xml -->
+    <string name="logical_name_colon">Logical name: </string>
+    <string name="open">Open</string>
+    <string name="claim">Claim</string>
+    <string name="release">Release</string>
+    <string name="close">Close</string>
+    <string name="check_health">Check health</string>
+    <string name="info">Info</string>
+    <string name="device_enabled">Device enabled</string>
+    <string name="async_mode">Async mode</string>
+    <string name="device_messages">Device messages: </string>
+
+    <!-- fragment_pos_printer_general_printing.xml -->
+    <string name="send_to_printer">Send to printer: </string>
+    <string name="add_escape_sequence">Add escape sequence</string>
+    <string name="print_normal">Print normal</string>
+    <string name="cut_paper">Cut paper</string>
+    <string name="character_set">Character set</string>
+
+    <!-- fragment_pos_printer_bar_code.xml -->
+    <string name="height">Height: </string>
+    <string name="width">Width: </string>
+    <string name="symbology">Symbology: </string>
+    <string name="alignment">Alignment: </string>
+    <string name="text_position">Text position: </string>
+    <string name="bar_code_data">Bar code data: </string>
+    <string name="print_bar_code">Print bar code</string>
+
+    <string-array name="symbology">
+        <item>UPC-A</item>
+        <item>UPC-E</item>
+        <item>EAN 8</item>
+        <item>EAN 13</item>
+        <item>Codabar</item>
+        <item>Code 39</item>
+        <item>Code 93</item>
+        <item>Code 128</item>
+        <item>PDF 417</item>
+        <item>QR CODE</item>
+        <item>MAXICODE</item>
+        <item>DATAMATRIX</item>
+    </string-array>
+    <string-array name="alignment">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>
+    </string-array>
+    <string-array name="text_position">
+        <item>None</item>
+        <item>Above</item>
+        <item>Below</item>
+    </string-array>
+
+    <!-- fragment_pos_printer_bitmap.xml -->
+    <string name="bitmap_to_print">Bitmap to print: </string>
+    <string name="gallery">Gallery</string>
+    <string name="bitmap_width">Bitmap width: </string>
+    <string name="bitmap_alignment">Bitmap alignment: </string>
+    <string name="bitmap_width_hint">One pixel per printer dot</string>
+    <string name="print_bitmap">Print bitmap</string>
+
+    <!-- fragment_pos_printer_page_mode.xml -->
+    <string name="page_mode_area">Page Mode area: </string>
+    <string name="page_mode_horizontal_position">Page Mode horizontal position: </string>
+    <string name="page_mode_vertical_position">Page Mode vertical position: </string>
+    <string name="page_mode_print_area">Page Mode print area: </string>
+    <string name="page_mode_print_direction">Page Mode print direction: </string>
+    <string name="clear_print_area">Clear print area</string>
+    <string name="update_properties">Update properties</string>
+    <string name="page_mode_command">Page Mode command: </string>
+    <string name="send_page_mode_command">Send Page Mode command</string>
+
+    <string-array name="page_mode_print_direction">
+        <item>Left to right</item>
+        <item>Bottom to top</item>
+        <item>Right to left</item>
+        <item>Top to bottom</item>
+    </string-array>
+    <string-array name="page_mode_command">
+        <item>Enter Page Mode</item>
+        <item>Print and destroy canvas</item>
+        <item>Clear page and exit Page Mode</item>
+    </string-array>
+
+    <!-- fragment_cash_drawer.xml -->
+    <string name="open_drawer">Open drawer</string>
+    <string name="get_drawer_opened">Get drawer opened</string>
+
+    <!-- fragment_msr.xml -->
+    <string name="auto_disable">Auto disable</string>
+    <string name="data_event_enabled">Data event enabled</string>
+    <string name="track1_data">Track 1 data: </string>
+    <string name="track2_data">Track 2 data: </string>
+    <string name="track3_data">Track 3 data: </string>
+    <string name="clear_fields">Clear fields</string>
+    <string name="refresh_fields">Refresh fields</string>
+
+    <!-- fragment_smart_card.xml -->
+    <string name="read_data">Read data</string>
+    <string name="slot">Slot</string>
+    <string name="smart_card">Smart card</string>
+    <string name="sam1">SAM1</string>
+    <string name="sam2">SAM2</string>
+    <string name="mode">Mode</string>
+    <string name="apdu_mode">APDU mode (EMV standard)</string>
+    <string name="tpdu_mode">TPDU mode (ISO standard)</string>
+
+</resources>

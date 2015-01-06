@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bxl.postest.CashDrawerFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/logical_name_colon" />
+
+    <Button
+        android:id="@+id/buttonCheckHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonInfo"
+        android:layout_alignBottom="@+id/buttonInfo"
+        android:layout_toRightOf="@+id/buttonInfo"
+        android:text="@string/check_health" />
+
+    <EditText
+        android:id="@+id/editTextLogicalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/cash_drawer" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLogicalName" />
+
+    <Button
+        android:id="@+id/buttonOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewState"
+        android:text="@string/open" />
+
+    <Button
+        android:id="@+id/buttonClaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOpen"
+        android:layout_alignBottom="@+id/buttonOpen"
+        android:layout_toRightOf="@+id/buttonOpen"
+        android:text="@string/claim" />
+
+    <Button
+        android:id="@+id/buttonRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonOpen"
+        android:text="@string/release" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonRelease"
+        android:layout_alignBottom="@+id/buttonRelease"
+        android:layout_toRightOf="@+id/buttonRelease"
+        android:text="@string/close" />
+
+    <Button
+        android:id="@+id/buttonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonRelease"
+        android:text="@string/info" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDeviceEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonInfo"
+        android:text="@string/device_enabled" />
+
+    <TextView
+        android:id="@+id/textViewDeviceMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonOpenDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxDeviceEnabled"
+        android:text="@string/open_drawer" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonOpenDrawer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/device_messages" />
+
+    <Button
+        android:id="@+id/buttonGetDrawerOpened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOpenDrawer"
+        android:layout_toRightOf="@+id/buttonOpenDrawer"
+        android:text="@string/get_drawer_opened" />
+
+</RelativeLayout>
